@@ -1,0 +1,404 @@
+/* ========== Google Font ========== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+/* ========== GLobal & Variable ========== */
+
+:root {
+  --color-primary: #fff;
+  --color-secondary: #202020;
+  --color-background: #121212;
+  --color-header: #18181c;
+  --color-game: #d9d9d9;
+  --color-blue: #26bbff;
+  --color-dumb: #c3c3c3;
+  --color-dumbb: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  scroll-behavior: smooth;
+}
+
+/* ========== header / navbar start ========== */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.2rem 7%;
+  background-color: var(--color-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #101010;
+}
+
+.header__logo {
+  color: var(--color-primary);
+  font-weight: 900;
+  font-size: x-large;
+}
+
+.header__navigation {
+  display: flex;
+}
+
+.btn__register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: var(--color-dumb);
+  background-color: var(--color-secondary);
+  width: 100px;
+  height: 37px;
+  border-radius: 8px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.btn__register:hover {
+  background-color: var(--color-primary);
+  color: var(--color-dumbb);
+}
+
+.btn__login,
+.btn__logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-dumbb);
+  background-color: var(--color-primary);
+  width: 100px;
+  height: 37px;
+  border-radius: 8px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.btn__login:hover,
+.btn__logout:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-dumb);
+}
+
+/* ========== header / navbar end ========== */
+
+/* =========== main section start ========== */
+main {
+  padding: 1.2rem 7%;
+}
+
+.main__container,
+.gamedetail__container {
+  padding: 2rem 0 0 0;
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__left {
+  display: block;
+  justify-content: center;
+}
+
+.main__title {
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.main__left p {
+  margin-bottom: 1rem;
+}
+
+.main__left span {
+  font-weight: 900;
+}
+
+.btn__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.btn__cta a {
+  font-weight: 900;
+  font-size: 15px;
+  color: var(--color-dumbb);
+}
+
+.main__right {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.main__right img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+/* =========== main section end ========== */
+
+/* ========== login / register section start ========== */
+section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login__container {
+  text-align: center;
+}
+
+.login__avatar {
+  padding: 20px;
+  background-color: var(--color-primary);
+  width: 125px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.login__box {
+  background-color: var(--color-secondary);
+  border-radius: 8px;
+  width: 419px;
+  height: 290px;
+  text-align: start;
+}
+
+.login__creds {
+  padding: 1.5rem 1.5rem 0;
+}
+
+.login__creds input,
+.login__creds button {
+  display: block;
+}
+
+.login__creds label {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.login__creds input[type="username"],
+.login__creds input[type="password"] {
+  width: 100%;
+  height: 49px;
+  background-color: var(--color-header);
+  color: var(--color-primary);
+  font-weight: 300;
+  font-size: medium;
+  text-align: start;
+  padding: 0 1rem;
+  margin: 10px 0;
+}
+
+.login__creds button {
+  width: 100%;
+  height: 49px;
+  background-color: var(--color-blue);
+  color: var(--color-dumbb);
+  border-radius: 8px;
+  font-size: medium;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+
+.login__cta {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.login__cta a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-blue);
+  margin-left: 0.3rem;
+  font-weight: bold;
+}
+/* ========== login / register section end ========== */
+
+/* ========== detail section start ========== */
+.gamedetail__left {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.gamedetail__left img {
+  width: 562px;
+  height: 332px;
+  object-fit: cover;
+}
+
+.gamedetail__right {
+  display: block;
+  padding: 0 0 0 2rem;
+}
+
+.gamedetail__title {
+  display: flex;
+  text-align: start;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.gamedetail__right p {
+  width: 490px;
+  height: 179px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.btn__play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  width: 100%;
+  height: 61px;
+  border-radius: 8px;
+}
+
+.btn__play a {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 32px;
+}
+/* ========== media queries ========== */
+/* laptop */
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .main__right img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* handphone */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 60%;
+  }
+
+  .header__logo {
+    width: 100%;
+    margin: 0.3rem 0;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__navigation {
+    display: none;
+  }
+
+  .main__container {
+    display: block;
+    padding-top: 15rem;
+  }
+
+  .main__left {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .btn__cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .main__right {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animation 3s infinite alternate ease-in-out;
+  }
+
+  .main__right img {
+    width: 125px;
+    height: 125px;
+  }
+
+  @keyframes animation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
+
+  .login__avatar {
+    width: 115px;
+    height: 115px;
+  }
+
+  .login__container {
+    display: block;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .login__box {
+    width: 250px;
+    height: 275px;
+    padding: 0.2rem;
+  }
+
+  .login__creds input[type="username"],
+  .login__creds input[type="password"],
+  .login__creds button {
+    width: 100%;
+    height: 49px;
+  }
+}

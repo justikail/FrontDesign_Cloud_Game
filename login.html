@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud Game</title>
+
+    <!-- ======= - Links Rel - ======= -->
+    <!-- ========== style ========== -->
+    <link rel="stylesheet" href="assets/style.css" />
+    <!-- ========== web icon ========== -->
+    <link rel="shortcut icon" href="assets/img/vr-flatline.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- login / register section start -->
+    <section>
+      <div class="login__container">
+        <img src="assets/img/iconamoon_profile-fill.svg" alt="Avatar" class="login__avatar" />
+        <form action="https://localhost/login.php" method="POST">
+          <div class="login__box">
+            <div class="login__creds">
+              <label for="username">Username</label>
+              <input type="username" name="username" placeholder="Username" required />
+              <label for="password">Password</label>
+              <input type="password" name="password" placeholder="Password" required />
+              <button type="submit">Login</button>
+            </div>
+          </div>
+        </form>
+        <p class="login__cta">Don't have account ? <a href="https://localhost/register.php"> Register</a></p>
+      </div>
+    </section>
+    <!-- login / register section end -->
+  </body>
+</html>
