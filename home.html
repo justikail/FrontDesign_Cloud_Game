@@ -15,7 +15,7 @@
   <body>
     <!-- header start -->
     <header>
-      <div class="header__logo"><a href="assets/img/background.png" class="header__logo">CLOUD GAME</a></div>
+      <div class="header__logo"><a href="#" class="header__logo">CLOUD GAME</a></div>
       <div class="header__navigation">
         <a class="btn__logout" href="http://localhost/logout.php">Logout</a>
       </div>
@@ -243,17 +243,17 @@
         scrollLeft = sliderContainer.scrollLeft;
       });
 
-      sliderContainer.addEventListener("mouseleave", () => {
+      document.addEventListener("mouseleave", () => {
         isDown = false;
         sliderContainer.classList.remove("active");
       });
 
-      sliderContainer.addEventListener("mouseup", () => {
+      document.addEventListener("mouseup", () => {
         isDown = false;
         sliderContainer.classList.remove("active");
       });
 
-      sliderContainer.addEventListener("mousemove", (e) => {
+      document.addEventListener("mousemove", (e) => {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - sliderContainer.offsetLeft;

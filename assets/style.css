@@ -306,7 +306,7 @@ section {
 .game__container {
   padding: 7rem 0 1.4rem;
   width: 100%;
-  position: relative;
+  position: static;
 }
 
 .game__category {
