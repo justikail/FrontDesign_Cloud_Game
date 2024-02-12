@@ -69,6 +69,7 @@ header {
   border-radius: 8px;
   font-weight: 300;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn__register:hover {
@@ -88,6 +89,7 @@ header {
   border-radius: 8px;
   font-weight: 300;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn__login:hover,
