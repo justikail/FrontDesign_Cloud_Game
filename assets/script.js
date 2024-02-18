@@ -1,3 +1,8 @@
+// VAR CONST LETS
+const sliderContainers = document.querySelectorAll(".slider__container");
+var selectElement = document.getElementById("game__categ");
+
+// FULL SCREEN
 function fs() {
   var elem = document.documentElement;
   if (elem.requestFullscreen) {
@@ -18,8 +23,17 @@ function fs() {
   });
 }
 
-const sliderContainers = document.querySelectorAll(".slider__container");
+// SPAWN REQUEST
+function RequestSPawn() {
+  var requestBox = document.getElementById("request__box");
+  if (requestBox.style.display === "none") {
+    requestBox.style.display = "flex";
+  } else {
+    requestBox.style.display = "none";
+  }
+}
 
+// SLIDER / CAROUSEL
 sliderContainers.forEach((sliderContainer) => {
   let isDown = false;
   let startX;

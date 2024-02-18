@@ -227,6 +227,30 @@
       </div>
     </main>
     <!-- main section end -->
+
+    <!-- request game start -->
+    <main>
+      <div class="request__container">
+        <span onclick="RequestSPawn()">Want A New Game? Request Here.</span>
+      </div>
+
+      <div id="request__box" style="display: none">
+        <form class="request__box" action="" method="POST" enctype="multipart/form-data">
+          <label for="game__title">Game Name : </label>
+          <input type="text" name="title" class="game__title" id="game__title" placeholder="E.g., Mario, Snake..." required />
+          <label for="game__categ">Category : </label>
+          <select name="category" id="game__categ" class="game__categ" required>
+            <option value="Arcade">Arcade</option>
+            <option value="Shooter">Shooter</option>
+            <option value="Race">Race</option>
+          </select>
+          <label for="game__desc">Description : </label>
+          <textarea name="description" id="description" cols="30" rows="10" placeholder="Describe the game that you want to publish in our site..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <!-- request game end -->
   </body>
   <script src="assets/script.js" type="text/javascript"></script>
 </html>

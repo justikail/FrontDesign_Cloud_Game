@@ -359,6 +359,72 @@ section {
 .game__container:not(:nth-child(1)) {
   padding: 0.5rem 0;
 }
+
+.request__container {
+  height: 50px;
+  border-top: 1px solid var(--color-dumb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.request__container span {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.request__box {
+  border-top: 1px solid var(--color-primary);
+  padding: 2rem 3%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.request__box label {
+  font-weight: 300;
+  margin: 0.8rem 0;
+}
+
+.game__title,
+.request__box select,
+.request__box textarea {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--color-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+.request__box textarea {
+  resize: none;
+}
+
+.request__box select option {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-size: 15px;
+}
+
+.request__box button {
+  padding: 10px 20px;
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* ========== home dashboard section end ========== */
 
 /* ========== media queries ========== */
